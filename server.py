@@ -1,9 +1,9 @@
-from fastmcp import fastmcp
+from fastmcp import FastMCP
 import requests
 from bs4 import BeautifulSoup
 import os
 
-mcp =fastmcp("Web Extraction MCP Server")
+mcp = FastMCP("Web Extraction MCP Server")
 
 @mcp.tool
 def web_extraction(url: str) -> str:
